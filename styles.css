@@ -80,13 +80,13 @@ li > svg {
 
 .headerTop {
     grid-row: 1/2;
-    border: 1px solid red;
     display: grid;
     grid-template-columns: 5fr 3fr;
 }
 .headerBottom {
-    grid-row: 2/3;
-    border: 1px solid blue; 
+    grid-row: 2/3; 
+    display: grid;
+    grid-template-columns: 3fr 2fr;
 }
 
 .search {
@@ -136,4 +136,51 @@ form input {
 .profile span {
     font-size: large;
     font-weight: bold;
+}
+
+/*bottom left header*/
+.headerBottomLeft {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 4fr;
+}
+
+.headerBottomLeft img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    height: 70px;
+    width: 70px;
+    justify-self: center;
+}
+
+.smallText {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: small;
+    font-weight:900;
+}
+
+.LargeText {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    align-self: flex-start;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.headerBottomRight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    height: 40%;
+    width: 25%;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: #5b21b6;
+    color: white;
+    font-weight: bolder;
 }
