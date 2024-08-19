@@ -116,7 +116,7 @@ form input {
 
 .profile {
     display: grid;
-    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-columns: 1fr 1fr 1fr 4fr;
     align-items: center;
 }
 
@@ -125,17 +125,20 @@ form input {
     width: 20px;
     display: inline;
     justify-self: center;
+    grid-column: 2/3;
 }
 
 .profile img {
     height: 40px;
     width: 40px;
     justify-self: center;
+    grid-column: 3/4;
 }
 
 .profile span {
     font-size: large;
     font-weight: bold;
+    grid-column: 4/5;
 }
 
 /*bottom left header*/
