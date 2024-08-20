@@ -245,13 +245,37 @@ button {
     margin-bottom: 10px;
 }
 
-.annCard {
+.annCard, .trendCard {
     background-color: white;
     border-radius: 10px;
-    width: 90%;
+    width: 250px;
     box-shadow: 2px 5px 10px -5px grey;
+    padding: 20px 20px;
 }
 
 .trending {
     grid-area: 2/2/3/3;
+}
+
+.trendCard {
+    height: 70%;
+    margin-top: 10px;
+    display: grid;
+}
+
+.annCard span {
+    font-size: smaller;
+    font-weight: lighter;
+    color: grey;
+}
+
+.annCard h5 {
+    margin: 0;
+    font-weight: bolder;
+}
+
+.trendCard img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
 }
